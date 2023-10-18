@@ -108,7 +108,7 @@ class EnumSchemaParser extends MonoSchemaParser {
     } else {
       content = _.map(this.schema.enum, (value) => {
         return {
-          key: this.formatEnumKey({ value }),
+          key: formatValue(key),
           type: keyType,
           value: formatValue(value),
         };
